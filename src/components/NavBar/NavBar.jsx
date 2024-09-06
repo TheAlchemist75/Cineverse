@@ -17,14 +17,13 @@ import {
 import { Link } from "react-router-dom";
 
 import useStyles from "./styles";
-import { useTheme } from "@mui/material/styles"; // Correct import for the theme
+import { useTheme } from "@mui/material/styles";
 
 const NavBar = () => {
   const classes = useStyles();
   const isMobile = useMediaQuery("(max-width:600px)");
   const isAuthenticated = true;
 
-  // Use theme hook to get access to the theme object
   const theme = useTheme();
 
   return (
